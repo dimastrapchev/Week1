@@ -1,0 +1,110 @@
+body {
+  font-family: 'Lunchtype22-Regular', serif;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+}
+
+.section-pad {
+  padding: 0 5vw;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.bg-cover {
+  background: url('../images/intro.jpg') no-repeat;
+  background-size: cover;
+}
+
+.difference {
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.marquee {
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  font-family: 'Lunchtype24-Medium-Expanded';
+  font-size: 5em;
+  line-height: 1;
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee span {
+  white-space: nowrap;
+  display: block;
+  animation: marquee;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50%  {transform: translateY(0px);}
+  100% {opacity: 1;}
+}
+
+.appear {
+  opacity: 0;
+  animation: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes marquee {
+  from {transform: translateX(00px);}
+  to {transform: translateX(-3000vw);}
+}
+
+.day-1 {
+  background: #fa7706;
+}
+
+.day-2 {
+  background: #0045f2;
+}
+
+.day-3 {
+  background-image: url('../images/day-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scroll-to {
+  position: absolute;
+  left: 50%;
+  bottom: 3vh;
+  width: 64px;
+  height: 32px;
+  background-image: url(../images/down-arrow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+
+.scroll-to-intro {
+  background-image: url(../images/down-arrow-light.svg);
+}

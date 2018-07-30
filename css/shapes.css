@@ -1,0 +1,83 @@
+.shape {
+  position: absolute;
+}
+
+section.day-1, section.day-2 {
+  position: relative;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.squiggle {
+  width:300px;
+  height: 35px;
+  background-image: url('../images/squiggle.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.circle:nth-child(1) {
+  top: 20%;
+  left: 5%;
+}
+
+.circle:nth-child(2) {
+  top: 30%;
+  left: 25%;
+}
+
+.circle:nth-child(3) {
+  top: 70%;
+  left: 8%;
+}
+
+.circle:nth-child(4) {
+  top: 20%;
+  right: 5%;
+}
+
+.circle:nth-child(5) {
+  top: 30%;
+  right: 25%;
+}
+
+.circle:nth-child(6) {
+  top: 60%;
+  right: 8%;
+}
+
+.squiggle:nth-child(1) {
+  top: 20%;
+  left: 5%;
+}
+
+.squiggle:nth-child(2) {
+  top: 30%;
+  left: 15%;
+}
+
+.squiggle:nth-child(3) {
+  top: 70%;
+  left: 5%;
+}
+
+.squiggle:nth-child(4) {
+  top: 20%;
+  right: 5%;
+}
+
+.squiggle:nth-child(5) {
+  top: 30%;
+  right: 15%;
+}
+
+.squiggle:nth-child(6) {
+  top: 70%;
+  right: 5%;
+}
