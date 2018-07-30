@@ -1,0 +1,82 @@
+.flex-column {
+  flex-direction: column;
+}
+
+.register {
+  display: flex;
+  background-color: beige;
+  height: 65vh;
+}
+
+.footer {
+  display: flex;
+  background-color: #11111f;
+  height: 35vh;
+}
+
+.footer img {
+  max-width: 80px;
+}
+
+.footer .button {
+  border: solid 2px beige;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: beige;
+}
+
+.eyes {
+  width: 100px;
+  height: 30px;
+  background-image: url('../images/eyes_open.svg');
+}
+
+.hand {
+  width: 60px;
+  height: 90px;
+  align-self: flex-end;
+  background-image: url('../images/ok_hand.svg');
+}
+
+.eyes,
+.hand {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.register .container {
+  display: flex;
+}
+
+.form {
+  margin: 50px 30px;
+}
+
+form {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: solid 2px green;
+}
+
+input {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  outline: none;
+}
+
+#fieldEmail {
+  flex: 1;
+}
+
+@media (max-width:780px) {
+    .form {
+      margin: 30px 0px;
+    }
+    .register .container {
+      flex-direction: column;
+    }
+}

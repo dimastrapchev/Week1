@@ -2,7 +2,9 @@
   position: absolute;
 }
 
-section.day-1, section.day-2 {
+.day-1,
+.day-2,
+.day-3 {
   position: relative;
 }
 
@@ -22,62 +24,62 @@ section.day-1, section.day-2 {
   background-position: center;
 }
 
-.circle:nth-child(1) {
+.circle:nth-of-type(1) {
   top: 20%;
   left: 5%;
 }
 
-.circle:nth-child(2) {
+.circle:nth-of-type(2) {
   top: 30%;
   left: 25%;
 }
 
-.circle:nth-child(3) {
+.circle:nth-of-type(3) {
   top: 70%;
   left: 8%;
 }
 
-.circle:nth-child(4) {
+.circle:nth-of-type(4) {
   top: 20%;
   right: 5%;
 }
 
-.circle:nth-child(5) {
+.circle:nth-of-type(5) {
   top: 30%;
   right: 25%;
 }
 
-.circle:nth-child(6) {
+.circle:nth-of-type(6) {
   top: 60%;
   right: 8%;
 }
 
-.squiggle:nth-child(1) {
+.squiggle:nth-of-type(1) {
   top: 20%;
   left: 5%;
 }
 
-.squiggle:nth-child(2) {
+.squiggle:nth-of-type(2) {
   top: 30%;
   left: 15%;
 }
 
-.squiggle:nth-child(3) {
+.squiggle:nth-of-type(3) {
   top: 70%;
   left: 5%;
 }
 
-.squiggle:nth-child(4) {
+.squiggle:nth-of-type(4) {
   top: 20%;
   right: 5%;
 }
 
-.squiggle:nth-child(5) {
+.squiggle:nth-of-type(5) {
   top: 30%;
   right: 15%;
 }
 
-.squiggle:nth-child(6) {
+.squiggle:nth-of-type(6) {
   top: 70%;
   right: 5%;
 }

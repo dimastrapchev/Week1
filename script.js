@@ -74,3 +74,13 @@ sections.forEach((section, index) => {
     shape.style.transitionDelay = delay + 'ms';
   })
 })
+
+const links = document.querySelectorAll('.js-scroll');
+links.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const href = link.getAttribute('href');
+    console.log(href);
+    document.querySelector(href).scrollIntoView({behavior: 'smooth'});
+  })
+})
